@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param Dholakia</title>
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+</head>
+<body class="other-page">
+    <header id="header">
+        <!-- Redirect to home -->
+        <a href="index.html"><span><i class="fa-solid fa-house"    class="header-icons"></i>Home         </span></a>
+        <!-- Redirect to about -->
+        <a href="about.html"><span><i class="fa-solid fa-person"   class="header-icons"></i>About        </span></a>
+        <!-- Redirect to experience -->
+        <a href="exp.html"><span><i class="fa-solid fa-id-card"  class="header-icons"></i>My Experience</span></a>
+        <!-- Redirect to projects -->
+        <a href="projects.html"><span><i class="fa-solid fa-terminal" class="header-icons"></i>My Projects  </span></a>
+        <!-- Redirect to resume -->
+        <a href="resume.html"><span style="color: white;"><i class="fa-solid fa-file" style="color: white;" class="header-icons"></i>Resume       </span></a>
+        <!-- Redirect to contact -->
+        <a href="contact.html"><span><i class="fa-solid fa-link"     class="header-icons"></i>Contact Me   </span></a>
+    </header>       
+
+
+    <div class="resume-container">
+        <object data="RESUME.pdf" type="application/pdf" class="pdf-viewer">
+            <p>It appears you don't have a PDF plugin. You can <a href="resume.pdf">download the PDF here.</a></p>
+        </object>
+        <a href="RESUME.pdf" download class="download-button">
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </div>
+
+    <!-- Dashboards Section -->
+<div class="dashboards-container">
+    <!-- GitHub Dashboard -->
+    <div class="dashboard-card github-card">
+        <div class="dashboard-header">
+            <i class="fab fa-github"></i>
+            <h2>GitHub Activity</h2>
+            <div class="dashboard-glow"></div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>Repositories</h3>
+                <div class="stat-value loading">25</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-star"></i>
+                <h3>Stars Earned</h3>
+                <div class="stat-value loading">148</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-download"></i>
+                <h3>Contributions</h3>
+                <div class="stat-value loading">327</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LeetCode Dashboard -->
+    <div class="dashboard-card leetcode-card">
+        <div class="dashboard-header">
+            <i class="fas fa-terminal"></i>
+            <h2>LeetCode Progress</h2>
+            <div class="dashboard-glow"></div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-check-double"></i>
+                <h3>Problems Solved</h3>
+                <div class="stat-value loading">189</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Contest Rank</h3>
+                <div class="stat-value loading">#4567</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-percent"></i>
+                <h3>Acceptance Rate</h3>
+                <div class="stat-value loading">92.4%</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
