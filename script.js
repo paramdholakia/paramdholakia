@@ -20,6 +20,8 @@ const passions = [
   "Innovator",
   "Mentor",
   "Teacher",
+  "Web Developer",
+  "Software Engineer"
 ];
 const passionsElement = document.getElementById("passions");
 
