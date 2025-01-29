@@ -1,3 +1,8 @@
+/*
+----------------------------
+--------CSS RESET-----------
+----------------------------
+*/
 /* Color Palette */
 :root {
     --primary-dark: #352d1e;       /* Main background */
@@ -24,6 +29,9 @@ body {
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     min-height: 100vh;
 }
+
+
+
 
 /* Header Styles */
 #header {
