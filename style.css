@@ -482,8 +482,14 @@ body {
 
 /* Timeline Animations */
 @keyframes growLine {
-    from { height: 0; opacity: 0 }
-    to { height: 100%; opacity: 1 }
+    from { 
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to { 
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }
 
 @keyframes drawLine {
@@ -540,63 +546,13 @@ body {
     position: absolute;
     left: 80px;
     width: 4px;
-    background: transparent;
-    animation: growLine 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, var(--golden-yellow), var(--accent-peach) 50%, var(--golden-yellow));
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
     z-index: 0;
-    background-image: 
-        /* Top Dots (5%) */
-        repeating-linear-gradient(
-            to bottom,
-            transparent 0,
-            transparent 2px,
-            var(--cream-white) 2px,
-            var(--cream-white) 4px
-        ),
-        /* Top Dashes (25%) */
-        repeating-linear-gradient(
-            to bottom,
-            transparent 0,
-            transparent 4px,
-            var(--cream-white) 4px,
-            var(--cream-white) 8px
-        ),
-        /* Solid Middle (75%) */
-        linear-gradient(
-            var(--cream-white),
-            var(--cream-white)
-        ),
-        /* Bottom Dashes (90%) */
-        repeating-linear-gradient(
-            to bottom,
-            transparent 0,
-            transparent 4px,
-            var(--cream-white) 4px,
-            var(--cream-white) 8px
-        ),
-        /* Bottom Dots (40%) */
-        repeating-linear-gradient(
-            to bottom,
-            transparent 0,
-            transparent 2px,
-            var(--cream-white) 2px,
-            var(--cream-white) 4px
-        );
-    
-    background-repeat: no-repeat;
-    background-size: 
-        100% 5%,    /* Top dots */
-        100% 25%,   /* Top dashes */
-        100% 75%,   /* Solid middle */
-        100% 90%,   /* Bottom dashes */
-        100% 40%;   /* Bottom dots */
-    background-position: 
-        0 0,        /* Top dots */
-        0 5%,       /* Top dashes */
-        0 30%,      /* Solid middle */
-        0 70%,      /* Bottom dashes */
-        0 100%;      /* Bottom dots */
-    
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    transform-origin: top;
+    animation: growLine 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .timeline-line::before,
